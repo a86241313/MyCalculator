@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Fascinate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script src="calculator.js"></script>
+    <meta charset="UTF-8">
+    <title>Rilakkuma_calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6" id="all">
+                <div id="formula">
+                    <table>
+                        <tr>
+                            <td id="showop"></td>
+                            <td colspan="3" id="shownum"></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="get_num('7')" class="num">7</button></td>
+                            <td><button onclick="get_num('8')" class="num">8</button></td>
+                            <td><button onclick="get_num('9')" class="num">9</button></td>
+                            <td><button onclick="operator_click('+')" class="sym">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="get_num('4')" class="num">4</button></td>
+                            <td><button onclick="get_num('5')" class="num">5</button></td>
+                            <td><button onclick="get_num('6')" class="num">6</button></td>
+                            <td><button onclick="operator_click('-')" class="sym">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="get_num('1')" class="num">1</button></td>
+                            <td><button onclick="get_num('2')" class="num">2</button></td>
+                            <td><button onclick="get_num('3')" class="num">3</button></td>
+                            <td><button onclick="operator_click('×')" class="sym">×</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="all_clear()" class="oth">C</button></td>
+                            <td><button onclick="get_num('0')" class="num">0</button></td>
+                            <td><button onclick="eql()" class="oth" id="eql">=</button></td>
+                            <td><button onclick="operator_click('÷')" class="sym">÷</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <img src="./img/Back.png" id="background">
+            </div>
+        </div>
+        <div class="col-md-3"><img src="./img/Copyright1.png" alt="" id=footer></div>
+    </div>
+    </div>
+    <div>
+        <!-- <button><a href="https://www.desmos.com/scientific" target="_blank">參考網路上面的計算機</a></button> -->
+
+</body>
+
+</html>
